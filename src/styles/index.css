@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Cinzel+Decorative:wght@400;700&family=Courgette&family=Lato:wght@300;400;700&family=Monoton&family=Playfair+Display+SC&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lato:wght@300;400;700&family=Poiret+One&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* logo font  */
+.font-logo {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+/* primary text  */
+.font-primary {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Home */
+
+.hero-section {
+  background: linear-gradient(#00000059, #000000cf, #0000006b),
+    url("https://i.ibb.co/MGV7kYg/download.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+}
+
+.all-drones-hero-section {
+  background: linear-gradient(#00000059, #000000cf, #0000006b),
+    url("https://i.ibb.co/1RD3Frr/d2.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-hero-section {
+  background: linear-gradient(#00000059, #000000cf, #0000006b),
+    url("https://i.ibb.co/n6nWRGZ/resize.png");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+/* Register */
+.register-screen {
+  background: linear-gradient(#00000059, #000000cf, #0000006b),
+    url("https://i.ibb.co/n6nWRGZ/resize.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.register-container {
+  color: white;
+  backdrop-filter: blur(14px);
+  background-color: rgba(117, 117, 117, 0.062);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 0px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 0px rgba(40, 40, 40, 0.35) solid;
+  border-right: 0px rgba(40, 40, 40, 0.35) solid;
+}
