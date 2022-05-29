@@ -22,7 +22,39 @@ const Testimonials = () => {
   }, []);
 
   return (
-   
+    <section className="max-w-screen-xl mx-auto px-6 pb-24 mt-16">
+    {/* heading  */}
+    <Bounce>
+      <div className="flex justify-center items-center flex-col">
+        <h1 className="font-logo text-gray-800 text-3xl font-semibold">
+          Customer Feedbacks
+        </h1>
+        <div className="h-1 w-24 bg-gray-400 rounded-full"></div>
+      </div>
+    </Bounce>
+    {/* testimonials  */}
+    <Swiper
+      loop={true}
+      className="mySwiper py-6"
+      autoplay={{
+        delay: 4000,
+        disableOnInteraction: false,
+      }}
+      pagination={true}
+      grabCursor={true}
+      slidesPerView={1}
+      speed={600}
+      spaceBetween={20}
+    >
+      {testimonialData.map((item) => (
+        <SwiperSlide key={item.id}>
+          <Bounce bottom>
+            <Testimonial {...item} />
+          </Bounce>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </section>
   );
 };
 
