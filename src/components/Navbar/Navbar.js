@@ -211,6 +211,42 @@ const Navbar = ({ bg, textColor, width }) => {
                 </NavLink>
               ))}
             </ul>
+               {/* user authentication  */}
+               {user.email ? (
+              <div className="flex flex-col items-center space-y-3">
+                <img
+                  src={user?.photoURL}
+                  alt={user.displayName}
+                  className="w-10 h-10 rounded-full"
+                />
+                <span className="text-gray-700">{user.displayName}</span>
+                <button className="btn-primary px-3" onClick={signOutUser}>
+                  Logout
+                </button>
+              </div>
+            ) : (
+              <>
+                <div className="px-3 py-2">
+                  <button
+                    className="btn-primary w-full mb-4"
+                    onClick={handleChangeRoute}
+                  >
+                    Register
+                  </button>
+                  <button
+                    className="btn-primary w-full"
+                    onClick={handleChangeLogin}
+                  >
+                    Signin
+                  </button>
+                </div>
+              </>
+            )}
+            {/* button  */}
+          </nav>
+        </Fade>
+      )}
+    </header>
 
   );
 };
