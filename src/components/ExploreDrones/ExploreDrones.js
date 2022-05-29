@@ -45,6 +45,8 @@ const ExploreDrones = () => {
           })}
         </div>
       </section>
+      <Footer />
+    </div>
   );
 };
 
