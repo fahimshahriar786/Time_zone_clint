@@ -22,6 +22,46 @@ const BookingCard = (props) => {
             />
           </div>
         </div>
+        
+        <div className="flex flex-col flex-grow">
+          {/* title and description */}
+          <div className="flex flex-col space-y-1 my-4">
+            <h2 className="text-gray-700 font-primary text-base">{title}</h2>
+            <p className="text-sm text-gray-500">{description}</p>
+          </div>
+
+          {/* others info  */}
+          <div className="flex items-center justify-between py-4">
+            {/* duration  */}
+            <div className="flex items-center space-x-3">
+              <MdPhoneIphone className="text-red-500 text-xl" />
+              <div className="flex flex-col">
+                <p className="text-sm font-primary text-gray-700">Design</p>
+                <span className="text-sm text-gray-500">{duration}</span>
+              </div>
+            </div>
+             {/* group  */}
+             <div className="flex items-center space-x-3">
+              <MdProductionQuantityLimits className="text-red-500 text-2xl" />
+              <div className="flex flex-col">
+                <p className="text-sm font-primary text-gray-700">
+                  Availability
+                </p>
+                <span className="text-sm text-gray-500">
+                  {groupMembers} pcs
+                </span>
+              </div>
+            </div>
+          </div>
+          {/* card footer  */}
+          <div className="flex items-center justify-between pt-3">
+            <h1 className="font-primary font-semibold text-gray-900 text-2xl">
+              ${price}
+            </h1>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
