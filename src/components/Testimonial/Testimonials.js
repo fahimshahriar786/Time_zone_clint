@@ -13,6 +13,14 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 const Testimonials = () => {
   
 
+  const [testimonialData, setTestimonialData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://timezoneeee.herokuapp.com/testimonials")
+      .then((res) => setTestimonialData(res.data));
+  }, []);
+
   return (
    
   );
