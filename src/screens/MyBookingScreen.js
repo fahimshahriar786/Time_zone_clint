@@ -154,7 +154,7 @@ const MyBookingScreen = () => {
                                 className="btn-primary px-4 w-36 mr-auto lg:ml-auto"
                                 onClick={() => handleDelete(_id)}
                               >
-                                Cancel
+                                DELET
                               </button>
                             </div>
                           </div>

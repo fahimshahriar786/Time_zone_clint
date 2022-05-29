@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { MdPhoneIphone } from "react-icons/md";
+// import { MdPhoneIphone } from "react-icons/md";
 import { MdProductionQuantityLimits } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import useBooking from "../../hooks/useBooking";
@@ -79,9 +79,9 @@ const TourPackCard = (props) => {
         <div className="flex items-center justify-between border-t border-gray-200 border-b  py-4">
           {/* duration  */}
           <div className="flex items-center space-x-3">
-            <MdPhoneIphone className="text-gray-900 text-xl" />
+            {/* <MdPhoneIphone className="text-gray-900 text-xl" /> */}
             <div className="flex flex-col">
-              <p className="text-sm font-primary text-gray-700">Design</p>
+              <p className="text-sm font-primary text-gray-700">Minum Order</p>
               <span className="text-sm text-gray-500">{duration}</span>
             </div>
           </div>
@@ -110,13 +110,13 @@ const TourPackCard = (props) => {
               className="cursor-pointer text-2xl text-red-600"
             />
             <button className="btn-primary px-6" onClick={handleBooking}>
-              Book Now
+              Order Now
             </button>
           </div>
         )}
         {!admin && (
           <button className="btn-primary px-6" onClick={handleBooking}>
-            Book Now
+           Order Now
           </button>
         )}
       </div>

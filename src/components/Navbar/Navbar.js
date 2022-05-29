@@ -117,7 +117,7 @@ const Navbar = ({ bg, textColor, width }) => {
                     <NavLink
                       to={item.to}
                       className={`${
-                        changeHeader ? "text-gray-700" : `${textColor} `
+                        changeHeader ? "text-white" : `${textColor} `
                       } text-base`}
                     >
                       {item.text}
@@ -136,7 +136,7 @@ const Navbar = ({ bg, textColor, width }) => {
                 className="w-10 h-10 rounded-full"
               />
               <span
-                className={`${changeHeader ? "text-gray-700" : `${textColor}`}`}
+                className={`${changeHeader ? "text-white" : `${textColor}`}`}
               >
                 {user.displayName}
               </span>
@@ -203,7 +203,7 @@ const Navbar = ({ bg, textColor, width }) => {
                 <NavLink
                   key={item.id}
                   to={item.to}
-                  className="text-gray-600 text-lg"
+                  className="text-white text-lg"
                 >
                   <li className="py-2 px-3 w-full hover:bg-gray-200 transition duration-300 cursor-default">
                     {item.text}
@@ -219,7 +219,7 @@ const Navbar = ({ bg, textColor, width }) => {
                   alt={user.displayName}
                   className="w-10 h-10 rounded-full"
                 />
-                <span className="text-gray-700">{user.displayName}</span>
+                <span className="text-white">{user.displayName}</span>
                 <button className="btn-primary px-3" onClick={signOutUser}>
                   Logout
                 </button>
