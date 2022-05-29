@@ -78,6 +78,28 @@ const Footer = () => {
                 ))}
               </nav>
             </div>
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 className="poppins text-gray-900 text-base mb-3 font-semibold">
+                Contact
+              </h2>
+              <nav className="list-none mb-10 flex flex-col space-y-2">
+                {/* list  */}
+                {footerLink.slice(8, 12).map((item) => (
+                 <h5 className="text-sm hover:shadow-xl">{item.text}</h5>
+                ))}
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <div className="max-w-screen-2xl mx-auto py-4 px-5 flex flex-wrap flex-col justify-center sm:flex-row">
+            <p className="font-bold text-gray text-sm text-center sm:text-left">
+              Copyright &copy; {new Date().getFullYear()} || All Rights Reserve By Time Zone Company.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </Fade>
   );
 };
 
