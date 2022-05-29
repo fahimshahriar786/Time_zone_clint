@@ -107,6 +107,26 @@ const Navbar = ({ bg, textColor, width }) => {
 
         
       </div>
+      {/* menu */}
+      <div className="hidden md:flex lg:flex space-x-3">
+          {user.email && (
+            <>
+              <ul className="flex items-center space-x-4">
+                {menu.map((item) => (
+                  <li key={item.id}>
+                    <NavLink
+                      to={item.to}
+                      className={`${
+                        changeHeader ? "text-gray-700" : `${textColor} `
+                      } text-base`}
+                    >
+                      {item.text}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
 
   );
 };
