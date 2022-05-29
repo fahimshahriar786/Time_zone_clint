@@ -34,7 +34,7 @@ const BookingForm = ({ bookings, totalBookingCost }) => {
           <input
             className="input-primary"
             defaultValue={user.displayName}
-            placeholder="👤 Name"
+            placeholder="Your Name"
             {...register("name", { required: true })}
           />
           {/* Email  */}
@@ -42,9 +42,36 @@ const BookingForm = ({ bookings, totalBookingCost }) => {
             type="email"
             className="input-primary"
             defaultValue={user.email}
-            placeholder="✉ Email"
+            placeholder="Your Email"
             {...register("email", { required: true })}
           />
+          {/* mobile No  */}
+          <input
+            type="number"
+            className="input-primary"
+            placeholder="☎ Mobile Number"
+            {...register("mobileNo", { required: true })}
+          />
+          {/* Card No  */}
+          <input
+            type="number"
+            className="input-primary"
+            placeholder="Visa / Master Card No"
+            {...register("cardNO", { required: true })}
+          />
+          {/* Address  */}
+          <input
+            type="text"
+            className="input-primary"
+            placeholder=" Delivery Address"
+            {...register("address", { required: true })}
+          />
+        </div>
+        <div className="flex justify-end flex-col mt-4">
+          <button className="btn-primary w-36 ml-auto">Place Order</button>
+        </div>
+      </div>
+    </form>
   );
 };
 
