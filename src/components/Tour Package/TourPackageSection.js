@@ -14,7 +14,17 @@ const TourPackageSection = () => {
 
 
   return (
-    
+    <section className="max-w-screen-xl mx-auto px-6 relative -top-36">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {toursPack?.slice(0, 6)?.map((item) => {
+          return (
+            <Fade key={item._id} bottom>
+              <TourPackCard {...item} />
+            </Fade>
+          );
+        })}
+      </div>
+    </section>
   );
 };
 
