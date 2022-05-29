@@ -27,7 +27,24 @@ const BookingForm = ({ bookings, totalBookingCost }) => {
       });
   };
   return (
-    
+    <form onSubmit={handleSubmit(onSubmit)} className="">
+      <div className="py-4 flex flex-col space-y-3 justify-between">
+        <div className="flex flex-col space-y-4">
+          {/* Name  */}
+          <input
+            className="input-primary"
+            defaultValue={user.displayName}
+            placeholder="👤 Name"
+            {...register("name", { required: true })}
+          />
+          {/* Email  */}
+          <input
+            type="email"
+            className="input-primary"
+            defaultValue={user.email}
+            placeholder="✉ Email"
+            {...register("email", { required: true })}
+          />
   );
 };
 
