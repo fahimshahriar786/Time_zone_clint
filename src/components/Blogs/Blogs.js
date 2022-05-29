@@ -28,9 +28,35 @@ const Blogs = () => {
                     4. URL state: Data that exists on our URLs, including the pathname and query parameters. <br />
                 </p>
             </div> 
+            <div className='p-20'>
+                <h2 className='text-xl font-bold'>3. What is a unit test? Why should write unit tests?
+                </h2>
+                <p>
+                    Unit Testing is a method where JavaScript test code is written for a web page or web application module. It is then combined with HTML as an inline event handler and executed in the browser to test if all functionalities are working as desired. <br /><br />
+                    Unit testing ensures that all code meets quality standards before it's deployed. This ensures a reliable engineering environment where quality is paramount. Over the course of the product development life cycle, unit testing saves time and money, and helps developers write better code, more efficiently.
+                </p>
+            </div>
+            <div className='p-20'>
+                <h2 className='text-xl font-bold'>4.How does prototypical inheritance work?
+                </h2>
+                <p>
+                Prototypical inheritance is usually misunderstood with prototype delegation, but it is more related to concatenative inheritance. It simplifies object creation and sets clear boundaries about what is to be inherited and what is not. It has clear advantages over class inheritance and solves many design flaws of the same.
+                </p>
+            </div>
+
+            <div className='p-20'>
+                <h2 className='text-xl font-bold'>5. You have an array of products. Each product has a name, price, description, etc. How will you implement a search to find products by name?
+                    
+                </h2>
+                <p>
+                Unit Test Unit Tests typically test functions, methods, and classes. Unit testing is a way to test units - the smallest components of your software, the smallest piece of code. A unit can be a single function. The goal is to validate that each unit performs as it should. A unit test tests a behavior in isolation to other tests. We should write unit tests because, It removes Poor code quality, Increased cost , Meaningless work. Also deals with Bad Product-Market Fit, Demotivated Team ,Unsuccessful Product ,Unhappy Clients.
+                </p>
+
+            </div>
+<Footer></Footer>
+        </div>
 
 
-            
        
         
     );
