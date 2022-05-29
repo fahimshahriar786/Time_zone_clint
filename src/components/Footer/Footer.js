@@ -20,6 +20,18 @@ const Footer = () => {
   ];
   return (
    
+ <Fade bottom>
+ <footer className="text-gray-600 poppins bg-yellow-200">
+   <div className="max-w-screen-xl px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+       {/* brand  */}
+       <div className="flex items-center flex-grow">
+         <Link to="/" className="flex items-center space-x-2">
+           <img
+             src="../../../assets/logo.png"
+             alt="logo"
+             className="w-12 h-12"
+           />
   );
 };
 
