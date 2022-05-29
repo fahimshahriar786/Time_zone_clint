@@ -32,6 +32,26 @@ const Footer = () => {
              alt="logo"
              className="w-12 h-12"
            />
+                     <span className="text-xl md:text-xl lg:text-2xl font-logo font-bold text-gray text-center">
+             Time Zone
+          </span>
+              </Link>
+            </div>
+            <div className="flex">
+              
+              <a href="" target="_blank">
+              <BsFacebook className="ml-2 mr-2 mt-5 text-2xl text-black-600">
+              </BsFacebook>
+              </a>
+              <a href="" target="_blank">
+              <BsInstagram className="mt-5 mr-2 text-2xl text-black-600"></BsInstagram>
+              </a>
+              <a href="" target="_blank">
+                <BsLinkedin className="mt-5 mr-2 text-2xl text-black-600"></BsLinkedin>
+                </a>
+                <a href="" target="_blank">
+                <BsTwitter className="mt-5 mr-2 text-2xl text-black-600"></BsTwitter>
+                </a>
   );
 };
 
