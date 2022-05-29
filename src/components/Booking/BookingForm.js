@@ -12,7 +12,19 @@ const BookingForm = ({ bookings, totalBookingCost }) => {
 
   //send data to server
   const onSubmit = (data) => {
-    
+    data["status"] = "pending";
+    const newData = { bookings, data };
+    console.log(newData);
+    axios
+      .post("https://timezoneeee.herokuapp.com/bookings", newData)
+      .then((response) => {
+        if (response.statusText === "OK") {
+          swal("Good job!", "Order has been placed", "success").then(() => {
+            reset();
+            history.push("/my-bookings");
+          });
+        }
+      });
   };
   return (
     
