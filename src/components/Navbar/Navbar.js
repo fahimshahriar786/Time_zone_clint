@@ -127,6 +127,64 @@ const Navbar = ({ bg, textColor, width }) => {
               </ul>
             </>
           )}
+           {/* user authentication  */}
+           {user.email ? (
+            <div className="flex items-center space-x-3">
+              <img
+                src={user?.photoURL}
+                alt={user.displayName}
+                className="w-10 h-10 rounded-full"
+              />
+              <span
+                className={`${changeHeader ? "text-gray-700" : `${textColor}`}`}
+              >
+                {user.displayName}
+              </span>
+              {changeHeader ? (
+                <button className="btn-primary px-3" onClick={signOutUser}>
+                  Logout
+                </button>
+              ) : (
+                <button className="btn-primary-2 px-3" onClick={signOutUser}>
+                  Logout
+                </button>
+              )}
+            </div>
+          ) : (
+            <div>
+              {changeHeader ?  (
+                <button
+                  className="btn-primary px-3"
+                  onClick={handleChangeRoute}
+                >
+                  Register
+                </button>
+              ) : (
+                <button
+                  className="btn-primary-2 px-3"
+                  onClick={handleChangeRoute}
+                >
+                  Register
+                </button>
+              )}
+              {changeHeader ? (
+                <button
+                  className="btn-primary ml-5 px-3"
+                  onClick={handleChangeLogin}
+                >
+                  Signin
+                </button>):(
+                  <button
+                  className="btn-primary-2 ml-5 px-3"
+                  onClick={handleChangeLogin}
+                >
+                  Signin
+                </button>
+                )
+              }
+            </div>
+          )}
+        </div>
 
   );
 };
