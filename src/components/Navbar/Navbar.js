@@ -185,6 +185,32 @@ const Navbar = ({ bg, textColor, width }) => {
             </div>
           )}
         </div>
+         {/* menu icon  */}
+         <div className="block md:hidden lg:hidden">
+          <HiMenuAlt3
+            className="w-10 h-10 ring-red-300 bg-red-500 text-white focus:ring-4 cursor-pointer rounded-lg p-2 transform transition duration-200 hover:scale-110"
+            onClick={handleClick}
+          />
+        </div>
+      </nav>
+
+      {/* mobile nav  */}
+      {mobileNav && (
+        <Fade>
+          <nav className="bg-white shadow-lg mx-6 mt-2 rounded-lg border border-gray-300 py-6 block md:hidden lg:hidden">
+            <ul>
+              {menu.map((item) => (
+                <NavLink
+                  key={item.id}
+                  to={item.to}
+                  className="text-gray-600 text-lg"
+                >
+                  <li className="py-2 px-3 w-full hover:bg-gray-200 transition duration-300 cursor-default">
+                    {item.text}
+                  </li>
+                </NavLink>
+              ))}
+            </ul>
 
   );
 };
