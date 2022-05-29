@@ -34,6 +34,17 @@ const ExploreDrones = () => {
           </div>
         </Bounce>
       </section>
+      <section className="max-w-screen-xl mx-auto px-6 relative my-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {dronePack?.map((item) => {
+            return (
+              <Fade key={item._id} bottom>
+                <TourPackCard {...item} />
+              </Fade>
+            );
+          })}
+        </div>
+      </section>
   );
 };
 
