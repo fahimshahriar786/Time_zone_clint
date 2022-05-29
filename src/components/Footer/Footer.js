@@ -52,6 +52,32 @@ const Footer = () => {
                 <a href="" target="_blank">
                 <BsTwitter className="mt-5 mr-2 text-2xl text-black-600"></BsTwitter>
                 </a>
+                </div>
+            <small className="">We do not have a retail sales showroom or pickup order service!</small>
+          </div>
+          <div className="flex-grow flex justify-end flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 className="poppins text-gray-900 text-base mb-3 font-semibold">
+                Working Hours
+              </h2>
+              <nav className="list-none mb-10 flex flex-col space-y-2">
+                {/* list  */}
+                {footerLink.slice(0, 4).map((item) => (
+                  <h5 className="text-sm hover:shadow-xl">{item.text}</h5>
+                ))}
+              </nav>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 className="poppins text-gray-900 text-base mb-3 font-semibold">
+                Services
+              </h2>
+              <nav className="list-none mb-10 flex flex-col space-y-2">
+                {/* list  */}
+                {footerLink.slice(4, 8).map((item) => (
+                  <h5 className="text-sm hover:shadow-xl">{item.text}</h5>
+                ))}
+              </nav>
+            </div>
   );
 };
 
