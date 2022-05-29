@@ -6,7 +6,12 @@ import Navbar from "../Navbar/Navbar";
 import TourPackCard from "../Tour Package/TourPackCard";
 
 const ExploreDrones = () => {
- 
+  const [dronePack, setDronePack] = useState([]);
+
+  useEffect(() => {
+    fetch("https://timezoneeee.herokuapp.com/devices")
+      .then((res) => res.json())
+      .then((data) => setDronePack(data));
   }, []);
 
   return (
