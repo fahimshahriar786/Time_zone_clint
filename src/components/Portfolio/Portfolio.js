@@ -1,6 +1,11 @@
 import React from 'react';
 import Fade from "react-reveal/Fade";
 import Footer from '../Footer/Footer';
+import{ImHtmlFive} from "react-icons/im"
+import{GiClick} from "react-icons/gi"
+
+
+import{SiJavascript,SiCss3, SiReact ,SiNodedotjs} from "react-icons/si"
 import Navbar from '../Navbar/Navbar';
 
 
@@ -21,14 +26,13 @@ const Portfolio = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-8">
           {/* left side image  */}
           <Fade left>
-            <div className="flex justify-center lg:justify-start ">
-              {/* <img src="./img/port.jpg" alt="about" /> */}
-              <img src="./port.jpg" alt="" />
-            </div>
-          </Fade>
+          <div className="flex justify-center lg:justify-start border-rounded">
+            <img src="https://i.ibb.co/28HkVXp/port.jpg" alt="about" />
+          </div>
+        </Fade>
           {/* right side description  */}
           <Fade right>
-            <div className="flex flex-col items-center lg:items-start space-y-3 ">
+            <div className="flex justify-center flex-col items-center lg:items-start space-y-3 ">
               {/* description  */}
               <div className="text-gray-900 text-sm font-primary">
              <h1 className="text-xl">ABOUT ME !</h1> 
@@ -48,7 +52,38 @@ const Portfolio = () => {
               </div>
   
             
+              <div className='flex mx-auto text-white'>
               
+              <a href="" target="_blank">
+            <ImHtmlFive className="ml-2 mr-2 mt-5 text-2xl text-black-600">
+            </ImHtmlFive>
+            </a>
+              <a href="" target="_blank">
+            <SiCss3 className="ml-2 mr-2 mt-5 text-2xl text-black-600">
+            </SiCss3>
+            </a>
+            
+            <a href="" target="_blank">
+            <SiJavascript className="ml-2 mr-2 mt-5 text-2xl text-black-600">
+            </SiJavascript>
+            </a>
+            <a href="" target="_blank">
+            <SiReact className="ml-2 mr-2 mt-5 text-2xl text-black-600">
+            </SiReact>
+            </a>
+            <a href="" target="_blank">
+            <SiNodedotjs className="ml-2 mr-2 mt-5 text-2xl text-black-600">
+            </SiNodedotjs>
+            </a>
+            
+            </div>
+
+            <div className=' text-red-300 mx-auto'>
+              <h1 className='text-2xl'> Recent Project !</h1>
+              <a href=" https://fir-project-1-ed6c8.web.app/" target="_blank">click Hear
+              <GiClick className="ml-2 mr-2 mt-5 text-2xl text-black-600">
+            </GiClick></a>
+            </div>
             </div>
           </Fade>
         </div>
